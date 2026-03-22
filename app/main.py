@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
-from agent import process_image_urls
+from app.agent import process_image_urls
 
 app = FastAPI()
 
