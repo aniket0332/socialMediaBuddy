@@ -5,8 +5,10 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import './App.css';
 
 const App = () => {
+  const basename = process.env.PUBLIC_URL;
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/login" element={<Auth />} />
