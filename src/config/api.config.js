@@ -4,6 +4,6 @@ const AGENT_TEST_ENDPOINT = process.env.REACT_APP_AGENT_TEST_ENDPOINT;
 
 export const API_ENDPOINTS = {
   PUT_FILE: `${API_BASE_URL}/file`,
-  AGENT: `${API_BASE_URL}/generate-post`,
+  AGENT: `${API_BASE_URL}/suggestion`,
   AGENT_TEST: `${AGENT_TEST_ENDPOINT}`,
 };
